@@ -3,8 +3,12 @@ import {defineConfig} from 'astro/config';
 import starlight from '@astrojs/starlight';
 import {ion} from "starlight-ion-theme";
 
+const isProd = process.env.NODE_ENV === 'production';
+
 // https://astro.build/config
 export default defineConfig({
+    site: isProd ? 'https://s14094.github.io' : 'http://localhost:4321',
+    base: isProd ? '/KitchenDocs/' : '/',
     integrations: [
         starlight({
             title: 'Kitchen Docs',
