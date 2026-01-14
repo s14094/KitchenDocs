@@ -1,0 +1,32 @@
+---
+title: Kitchen docs
+description: Get started building your docs site with Starlight.
+template: doc
+hero:
+  tagline: Przepisy prosto z nadmorskiej okolicy, Brzeźna.
+  image:
+    file: ../../assets/cook.png
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Natępne kroki
+
+<CardGrid stagger>
+	<Card title="Wyszukaj" icon="magnifier">
+		Opcja `Search` na górze, pozwala znaleźć wszystko.
+	</Card>
+	<Card title="Lista" icon="list-format">
+		Po lewej stronie są kategorie posiłków oraz poszczególne przepisy.
+	</Card>
+	<Card title="Add new content" icon="add-document">
+		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	</Card>
+	<Card title="Configure your site" icon="setting">
+		Edit your `sidebar` and other config in `astro.config.mjs`.
+	</Card>
+	<Card title="Read the docs" icon="open-book">
+		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	</Card>
+</CardGrid>
+

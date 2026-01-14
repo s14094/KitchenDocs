@@ -1,0 +1,55 @@
+---
+title: Template
+description: Get started building your docs site with Starlight.
+hero:
+    tagline: Czas przygotowania ~X min
+    image:
+        file: ../../../assets/cook.png
+---
+
+
+import {FileTree} from '@astrojs/starlight/components';
+import {Card} from '@astrojs/starlight/components';
+import {LinkButton} from '@astrojs/starlight/components';
+import {Steps} from '@astrojs/starlight/components';
+import {Aside} from '@astrojs/starlight/components';
+
+
+
+## Składniki
+<FileTree>
+    - xyz 150g
+    - ser owczy 100g
+    - Guanciale/Pancetta/Boczek 300g
+</FileTree>
+
+## Opis
+<Card>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+    et
+    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+    laborum.</Card>
+
+## Przygotowanie
+<Steps>
+    1. Sed ut perspiciatis unde omnis
+    2. iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
+</Steps>
+<Aside type="tip">
+    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
+</Aside>
+<Steps>
+    3. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+    4. sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt
+</Steps>
+
+<LinkButton
+    href="https://www.namecheap.com/visual/font-generator/whitespace/"
+    variant="secondary"
+    icon="external"
+    iconPlacement="start"
+>
+    Link do przepisu
+</LinkButton>
